@@ -11,6 +11,7 @@ def main():
     for i in range(1, 798):
         url = f"https://agregatoreat.ru/clients/customers/addresses=москва&status=1/page/{i}"
         try:
+            print(i)
             get_page(url)
         except Exception as e:
             print(e)
